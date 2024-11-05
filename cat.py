@@ -21,6 +21,7 @@ class Cat:
         print(f"{self.name} is training...")
         self.energy -= 5
         self.intelligence += 1
+        self.weight -= 1
         self.age += 0.1
 
     def feed(self):
@@ -28,3 +29,16 @@ class Cat:
         self.energy += 10
         self.weight += 1
         self.age += 0.1
+    
+    def play(self):
+        print(f"{self.name} is playing...")
+        self.energy -= 5
+        self.weight -= 0.5
+        self.age += 0.1
+    
+    def sleep(self):
+        print(f"{self.name} is sleeping...")
+        self.energy += 8
+        self.age += 0.1
+
+            
