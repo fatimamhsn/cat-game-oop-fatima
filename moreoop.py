@@ -34,4 +34,5 @@ class manager:
       
     def increase_bonus(self):
         bonus = bonus * 1.05
-    
+
+        #yhtyhbrg
