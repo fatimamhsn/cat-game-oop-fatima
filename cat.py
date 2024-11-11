@@ -12,8 +12,8 @@ class Cat:
         self.colour = given_colour
         self.age = 1
         self.energy = 50
-        self.intelligence = 5
-        self.weight = 5
+        self.intelligence = 20
+        self.weight = 30
         
 
     
@@ -40,5 +40,19 @@ class Cat:
         print(f"{self.name} is sleeping...")
         self.energy += 8
         self.age += 0.1
+    
+    def showstats(self):
+        print(f" Age: {self.age} \n Weight: {self.weight}  \n Energy: {self.energy} \n Intelligence: {self.intelligence}")
 
-            
+    
+    def check(self):
+        if self.age<20:
+            return False
+        elif self.energy<5:
+            return False
+        elif self.weight<5:
+            return False
+        elif self.weight>30:
+            return False
+        else:
+            return True
